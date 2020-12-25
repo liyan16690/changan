@@ -1,0 +1,564 @@
+        /*car main*/
+        .main {
+            min-width:1200px;
+        }
+        .carousel {
+            width:100%;
+            height:550px;
+            position:relative;
+        }
+        .carousel-inner div{
+            position:absolute;
+            width:100%;
+            height:550px;
+            z-index:10;
+            display:block;
+        }
+        .carP1 {
+            background:url(../img/banner02.jpg) no-repeat;
+            background-size:100% 100%;
+        }
+        /*导航*/
+        .nav-series {
+            height:81px;
+            background:#fff;
+        }
+        .nav-series .wrap {
+            height:81px;
+            text-align:center;
+            position:relative;
+            box-shadow:1px -2px  30px  rgba(51,51,51,0.32);
+        }
+        .clearfix:before {
+            content:"";
+            display:table;
+        }
+        .clearfix:after {
+            content:"";
+            height:0;
+            display:block;
+            clear:both;
+        }
+        .car-title {
+            float:left;
+            height:100%;
+            width:260px;
+            margin-left:2%;
+            font-size:40px;
+            font-weight:bolder;
+            font-style:italic;
+            line-height:81px;
+        }
+        .nav-series .price_top {
+            float:left;
+            margin-left:2%;
+        }
+        .nav-series .price_top p {
+            height:80px;
+            line-height:80px;
+            font-size:18px;
+            color:#333;
+            font-weight:bolder;
+        }
+        .yuyuetiyan {
+            position:absolute;
+            z-index:999;
+            right:0;
+            height:91px;
+            text-align:center;
+            top:0;
+        }
+        .yuyuetiyan img {
+            height:91px;
+            margin:0;
+            float:left;
+        }
+        .yuyuetiyan a {
+            float:left;
+            width:238px;
+            color:#fff;
+            font-size:17px;
+            height:91px;
+            background:#1d1d1d;
+            line-height:91px;
+        }
+        .yuyuetiyan a img {
+            width:48px;
+            height:48px;
+            margin-top:20px;
+            margin-left:30px;
+        }
+        .nav-series ul {
+            margin-right:21%;
+            overflow:hidden;
+            float:right;
+        }
+        @media screen and (max-width:980px){
+            .nav-series ul {
+                display:none;
+            }
+        }
+        .wrap ul {
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+            width:380px;
+            height:30px;
+            margin-top:25px;
+        }
+        .wrap ul li {
+            font-size:16px;
+            line-height:30px;
+        }
+        /*配置*/
+        .peizhi {
+            height:440px;
+            width:100%;
+            background:#fff;
+            padding-top:50px;
+        }
+        .pz-con {
+            width:1100px;
+            margin:0px auto;
+        }
+        .pz-title {
+            font-size:40px;
+            color:#333;
+            font-weight:bolder;
+            position:relative;
+            height:60px;
+            line-height:60px;
+        }
+        .pz-title div {
+            float:right;
+            width:144px;
+            height:31px;
+            margin-top:10px;
+            background:#333;
+            font-size:16px;
+            line-height:31px;
+            border-radius:15px;
+            text-align:center;
+        }
+        .pz-title div a{
+            color:#fff;
+        }
+        .pz-title div a img{
+            height:12px;
+        }
+        .pz-content {
+            height:390px;
+        }
+        .pz-left {
+            float:left;
+            width:476px;
+            height:315px;
+        }
+        .canshu1 {
+            padding:20px 0px;
+        }
+        .canshu1 ul {
+            margin:30px 10px;
+            display:flex;
+            justify-content:space-around;
+        }
+        .canshu1 ul li {
+            width:150px;
+            height:70px;
+            text-align:center;
+            border-right:1px solid #c0c0c0;
+        }
+        .canshu1 ul li:last-child {
+            border-right:0;
+        }
+        .canshu1 p{
+            font-size:26px;
+            font-weight:bolder;
+        }
+        .canshu1>ul>li>p+p{
+            font-size:12px;
+            font-weight:lighter;
+        }
+        .canshu2 {
+            height:40px;
+        }
+        .canshu2 ul {
+            display:flex;
+            justify-content:space-around;
+            margin-top:10px;
+            font-size:12px;
+            height:40px;
+            background:#f5f5f5;
+            border-radius:30px;
+            line-height:40px;
+        }
+        .canshu2 ul li span{
+            font-size:16px;
+        }
+        .pz-right {
+            height:315px;
+            width:532px;
+            float:right;
+        }
+        .show-car {
+            margin-top:30px;
+            width:532px;
+            height:230px;
+            border:1px;
+        }
+        .show-car div {
+            width:100%;
+            height:100%;
+        }
+        .show-car img {
+            width:532px;
+        }
+        .show-color ul{
+            display:flex;
+            justify-content:space-around;
+        }
+        .show-color li p {
+            display:none;
+        }
+        .show-color ul li.active img{
+            border-radius:50px;
+            box-shadow:0px 0px 10px 1px rgb(51,51,51,0.35);
+        }
+        .show-color ul li.active p {
+            display: block;
+        }
+        /*服务*/
+        .fw {
+            width:100%;
+            background:#ededed;
+            padding:30px 0px;
+            display:flex;
+            justify-content:space-around;
+        }
+        ul.fw li {
+            width:200px;
+            height:200px;
+            background:url(../img/round-home.png) 0px 0px no-repeat;
+            border-radius:50%;
+            background-size:cover;
+            text-align:center;
+            padding:30px 0px;
+            box-sizing:border-box;
+        }
+        ul.fw li h3{
+            margin:10px 0px 2px 0px;
+        }
+        ul.fw li p{
+            font-size:10px;
+        }
+        ul.fw li:hover {
+            background-position: -309px 0px;
+            color:#0f509b;
+        }
+        /*设计*/
+        .sheji,.price {
+            height:550px;
+            min-width:1200px;
+            overflow:hidden;
+            position:relative;
+        }
+        .sheji img,.price img {
+            width:1400px;
+        }
+        .left-font {
+            width:500px;
+            position:absolute;
+            top:40px;
+            left:60px;
+        }
+        .right-font {
+            width:500px;
+            position:absolute;
+            top:40px;
+            right:60px;
+            text-align:right;
+        }
+        .sheji h2 span {
+            color:#27f2ff;
+        }
+        .sheji h2 {
+            font-size:32px;
+            font-style:italic;
+            margin-bottom:25px;
+        }
+        .sheji h3 {
+            font-size:18px;
+            font-weight:lighter;
+            margin-bottom:15px;
+            font-family:Microsoft Yahei, Arial, sans-serif !important;
+        }
+        .left-font h4 {
+            float:left;
+            width:120px;
+            border-top:3px solid #27f2ff;
+        }
+        .right-font h4 {
+            float:right;
+            width:120px;
+            border-top:3px solid #27f2ff;
+        }
+        .sheji ul{
+            margin-top:40px;
+            clear:both;
+        }
+        .left-font ul li,.right-font ul li {
+            border-radius:16px;
+            background:linear-gradient(to right,#27f2ff,transparent,transparent);
+            font-size:14px;
+            padding:4px 8px;
+            margin-bottom:8px;
+        }
+        .right-font ul li {
+            background:linear-gradient(to left,#27f2ff,transparent,transparent);
+        }
+        .more{
+            width:120px;
+            height:30px;
+            border-radius:15px;
+            background:#000;
+            line-height:30px;
+            text-align:center;
+        }
+        .right-font .more {
+            float:right;
+        }
+        .more a{
+            color:#fff;
+        }
+        .more img {
+            width:6px;
+        }
+        /*配置价格对比*/
+        .price {
+            height:650px;
+            background:url(../img/bg6.jpg);
+        }
+        .p-con {
+            width:1000px;
+            height:550px;
+            margin:50px auto;
+            z-index:10;
+        }
+        .p-til {
+            font-size:24px;
+            font-weight:bold;
+            text-align:center;
+            margin-bottom:40px;
+        }
+        .p-bottom {
+            display:flex;
+            justify-content:space-around;
+        }
+        .p-content {
+            width:280px;
+            height:440px;
+            background:rgba(255,255,255,0.5);
+            border:1px solid #c0c0c0;
+            text-align:center;
+            padding-top:20px;
+        }
+        .p-content h2{
+            font-size:26px;
+            margin:20px 10px;
+            padding:10px 0px;
+            border-bottom:1px solid #c0c0c0;
+        }
+        .p-content h2+h2 {
+            font-size:16px;
+            font-weight:bolder;
+        }
+        .p-content span {
+            font-size:20px;
+        }
+        .p-content ul {
+            height:180px;
+            margin:30px 0px 10px 0px;
+        }
+        .p-content ul li {
+            height:28px;
+            color:#555;
+            line-height:28px;
+        }
+        .yuyue,.detail{
+            height:30px;
+            line-height:30px;
+            width:200px;
+            padding:0px 20px;
+            margin:10px auto;
+            background:#fff;
+            border-radius:15px;
+            border:1px solid #555;
+        }
+        .detail {
+            background:#000;
+            color:#fff;
+            border:1px solid #000;
+        }
+        .yuyue img,.detail img{
+            width:15px;
+            transform:rotate(-90deg);
+            margin-left:20px;
+        }
+        /*地图*/
+        .service {
+            height:650px;
+            text-align:center;
+            padding-top:60px;
+            position:relative;
+        }
+        .s-title {
+            font-size:26px;
+            font-weight:bold;
+            margin-bottom:30px;
+        }
+        .s-line {
+            width:80px;
+            height:2px;
+            background:#c0c0c0;
+            margin:15px auto;
+        }
+        .s-map {
+            height:560px;
+            background:#c0c0c0;
+            border:1px solid #c0c0c0;
+        }
+        #r-result {
+            position:absolute;
+            top:180px;
+            left:50px;
+            width:300px;
+            height:400px;
+            overflow:auto;
+            text-align:left;
+            border:1px solid #c0c0c0;
+        }
+        /*预约体验*/
+        .tiyansubmit {
+            height:480px;
+            margin-top:30px;
+            text-align:center;
+            background:url(../img/car/car03.png) 580px 150px no-repeat;
+        }
+        .ty-title {
+            height:60px;
+            font-size:26px;
+            line-height:80px;
+        }
+        .tijiao {
+            height:300px;
+            width:400px;
+            border-top:1px solid #c0c0c0;
+            font-size:16px;
+            padding-right:500px;
+            padding-top:20px;
+            margin:0 auto;
+        }
+        .tijiao input {
+            display:block;
+            border:none;
+            border-bottom:1px solid #c0c0c0;
+            width:100%;
+            height:40px;
+            font-size:18px;
+            padding-left:6px;
+        }
+        .tijiao select {
+            display:inline-block;
+            border:none;
+            border-bottom:1px solid #c0c0c0;
+            width:196px;
+            height:40px;
+            font-size:18px;
+            color:#333;
+        }
+        .yuedu {
+            height:60px;
+            line-height:60px;
+            text-align:left;
+        }
+        .my-radio {
+            width:18px;
+            height:18px;
+            display:inline-block;
+            vertical-align:middle;
+            margin-bottom:3px;
+            margin-right:8px;
+            border:1px solid #000000;
+        }
+        .tj-sub {
+            width:160px;
+            height:40px;
+            border-radius:20px;
+            background:#27f2ff;
+            color:#fff;
+            font-size:18px;
+            line-height:40px;
+        }
+        /*精彩鉴赏*/
+        .jingcai {
+            height:600px;
+            background:url(../img/kj11.jpg) no-repeat;
+            background-size:cover;
+        }
+        .jc-bg{
+            height:540px;
+            background:rgba(0,0,0,0.5);
+            color:#fff;
+            text-align:center;
+            padding:30px 0;
+        }
+        .jc-tu {
+            height:400px;
+            display:flex;
+            padding-top:30px;
+            justify-content:space-around;
+        }
+        .jc-tu img {
+            width:500px;
+        }
+        /*返回顶部*/
+        .back {
+            display:block;
+            position:fixed;
+            right:10px;
+            bottom:100px;
+            width:60px;
+            height:210px;
+            z-index:500;
+        }
+        .back div {
+            width:40px;
+            height:40px;
+            border:1px solid #c0c0c0;
+            border-radius:50%;
+            margin:10px;
+        }
+        .b-share {
+            background:url(../img/ico/ico-share.png) no-repeat;
+            background-position:11px 11px;
+        }
+        .b-kefu {
+            background:url(../img/ico/ico-kefu-h.png) no-repeat;
+            background-size:25px 25px;
+            background-position:8px 8px;
+        }
+        .b-top {
+            background:url(../img/ico/ico-arr-down.png) no-repeat;
+            transform:rotate(180deg);
+            background-size:20px 12px;
+            background-position:9px 14px;
+        }
+        /*固定导航栏*/
+        .nav-fixed{
+            display:block;
+            position:fixed;
+            top:0;
+            left:0;
+            z-index:500;
+            width:1360px;
+        }

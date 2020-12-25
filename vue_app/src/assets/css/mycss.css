@@ -1,0 +1,436 @@
+/*轮播图*/
+.main {
+    min-width:1200px;
+}
+.carousel {
+    width:100%;
+    height:550px;
+    position:relative;
+}
+.carousel-inner {
+    height:100%;
+    background-color:#111;
+    font-size:30px;
+    color:#fff;
+    overflow:hidden;
+}
+.carousel-inner div{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10;
+    text-align:center;
+}
+.carousel-inner img {
+    height:100%;
+}
+.arr {
+    position:absolute;
+    top:50%;
+    width:100%;
+    height:140px;
+    margin-top:-60px;
+    z-index:10;
+}
+.arr_right,.arr_left {
+    height:100%;
+    width:60px;
+    display:none;
+    background:url(../img/cursor-arr.png) no-repeat;
+    background-size:60px 140px;
+    opacity:0.6;
+}
+.arr_left{
+    float:left;
+    margin-left:60px;
+}
+.arr_right {
+    float:right;
+    margin-right:60px;
+    transform:rotate(180deg);
+}
+div.carousel:hover span {
+    display:block;
+}
+.direct {
+    position:absolute;
+    bottom:40px;
+    left:25%;
+    width:50%;
+    z-index:10;
+    display:flex;
+    justify-content:space-around;
+}
+ul.direct li {
+    width:130px;
+    height:5px;
+    background:#ccc;
+    justify-content:space-around;
+    transform:skew(-45deg);
+}
+/*热门车型*/
+.c {
+    width:100%;
+    background:#fff;
+    margin-bottom:60px;
+}
+.c_bot {
+    height:260px;
+    width:1200px;
+    display:flex;
+    margin:20px auto;
+}
+.c_left {
+    visibility:hidden;
+    width:100px;
+    height:240px;
+    background:url(../img/ico/arr.svg) no-repeat;
+    background-position:10px 60px;
+    background-size:contain;
+}
+.c_right {
+    visibility:hidden;
+    width:100px;
+    height:240px;
+    background:url(../img/ico/arr.svg) no-repeat;
+    background-position:10px 84px;
+    background-size:contain;
+    transform:rotate(180deg);
+}
+div.c_bot:hover div {
+    visibility:visible;
+}
+.c_ul {
+    width:80%;
+    height:260px;
+    overflow:hidden;
+}
+.c_ul ul{
+    display:flex;
+}
+.car_list {
+    width:300px;
+    padding:40px 10px 20px 10px;
+    box-sizing:border-box;
+    margin-right:20px;
+}
+.car_list img {
+    width:280px;
+    height:110px;
+}
+.car_list p {
+    font-size:18px;
+    color:#000;
+    text-align:center;
+}
+.car_list .yuan {
+    font-size:12px;
+    color:darkgray;
+    margin-top:2px;
+}
+ul.inner {
+    text-align:center;
+    height:20px;
+    margin:10px 0;
+}
+ul.inner li {
+    width:20px;
+    height:20px;
+    margin:0 10px;
+    background:#ccc;
+    border-radius:50%;
+    display:inline-block;
+}
+.fw {
+    width:100%;
+    background:#ededed;
+    padding:30px 0px;
+    display:flex;
+    justify-content:space-around;
+}
+ul.fw li {
+    width:200px;
+    height:200px;
+    background:url(../img/round-home.png) 0px 0px no-repeat;
+    border-radius:50%;
+    background-size:cover;
+    text-align:center;
+    padding:30px 0px;
+    box-sizing:border-box;
+}
+ul.fw li img{
+    width:60px;
+}
+ul.fw li h3{
+    margin:10px 0px 2px 0px;
+}
+ul.fw li p{
+    font-size:10px;
+}
+ul.fw li:hover {
+    background-position: -309px 0px;
+    color:#0f509b;
+}
+/*3L*/
+.new {
+    width:100%;
+    background:#fff;
+    display:flex;
+    justify-content:space-around;
+    padding:40px 0;
+}
+.new div {
+    position:relative;
+    height:230px;
+    width:400px;
+    background:#ccc;
+}
+div.new img:hover{
+    transform:scale(1.1);
+    box-shadow:1px 1px 2px 2px #999;
+}
+.new img {
+    width:100%;
+    transition:all 1s;
+}
+.new div p {
+    position:absolute;
+    left:20px;
+    bottom:10px;
+    font-size:16px;
+    color:#fff;
+    font-weight:bold;
+}
+/*注册登录*/
+.fathor {
+    width:100%;
+    height:500px;
+    background:url(../img/banner02.jpg) no-repeat;
+}
+.fathor>div{
+    width:100%;
+    height:100%;
+    background:rgb(0,0,0,0.7);
+}
+.fathor>div:before {
+    content:"";
+    display:table;
+    height:0;
+
+}
+.son {
+    height:400px;
+    width:700px;
+    margin:50px 0px 50px 250px;;
+    background:#004085;
+}
+.son_img {
+    height:100%;
+    width:400px;
+    float:left;
+    background:url(../img/banner02.jpg);
+    background-position:-250px -50px;
+}
+.son-content {
+    float:right;
+    width:300px;
+    height:100%;
+    background:#fff;
+    padding:20px 20px;
+    box-sizing:border-box;
+    text-align:center;
+}
+.title {
+    margin:30px 0px;
+    font-size:18px;
+}
+ /*注册*/
+ .phone {
+    height:100%;
+    vertical-align:center;
+}
+ul.regin li {
+    border:1px solid #a9a9a9;
+    margin-top:10px;
+    border-radius:5px;
+    height:32px;
+    overflow: hidden;
+}
+ul.regin li input {
+    vertical-align:top;
+    height:100%;
+    border:0;
+    padding-left:5px;
+}
+.input_img_left {
+    width:220px;
+    border-left:1px solid #a9a9a9 !important;
+}
+.input_button_right {
+    width:171px;
+    border-right:1px solid #a9a9a9;
+}
+button {
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+    width:80px;
+    height:100%;
+    
+}
+ul.regin p {
+    font-size:12px;
+    color:#c0c0c0;
+}
+ul.regin li:nth-child(5),ul.regin li:nth-child(6) {
+      border:0;
+}
+.reg {
+    width:100%;
+    background:#0056b3;
+    height:32px;
+    color:#fff;
+    border-radius: 5px;
+}
+#agree {
+    border:0;
+    vertical-align: middle;
+}
+.xieyi {
+    color:#0056b3;
+}
+    /*预约体验组件*/
+    .experience-kv {
+        height:280px;
+    }
+    .experience-kv img {
+        width:100%;
+    }
+    .experience-form {
+        border-bottom:1px solid #cbcbcb;
+        padding-bottom:50px;
+    }
+    .experience-form-title {
+        padding-top:60px;
+        text-align:center;
+    }
+    /*order 标题*/
+    .main-title h2 {
+        display:inline-block;
+        vertical-align:top;
+        font-size:26px;
+        color:#333;
+        background:url(../img/ico/ico-line.png) no-repeat right center;
+        padding-right: 140px;
+    }
+    .main-title h2 strong {
+        display:block;
+        font-weight:bold;
+        background:url(../img/ico/ico-line.png) no-repeat 0 center;
+        padding-left:140px;
+    }
+    .main-title p {
+        font-size:14px;
+        color:#666;
+        padding-top:8px;
+        letter-spacing:6px;
+    }
+    .experience-form-wrapper {
+        text-align:center;
+        padding-top:40px;
+    }
+    .ul-form {
+        display:inline-block;
+        vertical-align:top;
+        margin-left:-130px;
+        list-style: none;
+    }
+    .ul-form li {
+        position:relative;
+        padding-left:130px;
+        width:400px;
+    }
+    .ul-form li strong {
+        position:absolute;
+        text-align:right;
+        width:110px;
+        left:0;
+        top:0;
+        line-height:38px;
+        font-size:18px;
+        color:#333;
+        font-weight:normal;
+    }
+    .input-wrapper {
+        border:1px solid #ededed;
+        border-radius:4px;
+        z-index:2;
+        padding:8px 30px 8px 10px;
+        display:block;
+        margin-bottom:15px;
+        position:relative;
+    }
+    .input-wrapper .input-text {
+        background:#fff;
+        border:0;
+        width:100%;
+        padding:5px 0;
+        font-size:13px;
+        vertical-align:top;
+        outline:none;
+    }
+    /*意向车型select*/
+    .select-wra {
+        position:relative;
+        background:#fff;
+    }
+    select.input-wrapper {
+        width:100%;
+        height:43px;
+    }
+    i,u,b,strong {
+        text-decoration:none;
+        border:0;
+        font-style:normal
+    }
+    /*下拉选方向箭头*/
+    .input-wrapper-i {
+        z-index:5;
+        width:14px;
+        height:8px;
+        background:#fff url(../img/ico/ico-arr-down.png) no-repeat 0 0;
+        position:absolute;
+        right:7px;
+        top:18px;
+    }
+    .label-div {
+        text-align:left;
+    }
+    .ul-form li label {
+        display:inline-block;
+        vertical-align:top;
+        padding-left:20px;
+        position:relative;
+        color:#999;
+        text-align:justify;
+        user-select:none;
+    }
+    .checkbox-txt {
+        color:#999;
+        text-align:justify;
+        padding-top:5px;
+        display:none;
+    }
+    .input-submit {
+        display:block;
+        font-size:17px;
+        cursor:pointer;
+        width:100%;
+        border-radius:5px;
+        padding:10px;
+        color:#fff;
+        background:#0066B5;
+        margin-top:25px;
+
+    }
